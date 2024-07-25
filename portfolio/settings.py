@@ -31,7 +31,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-CSRF_TRUSTED_ORIGINS= ['https://oasisarchivesapi.onrender.com','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS= ['https://tazin-tasnim.onrender.com','https://*.127.0.0.1']
 
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # }
 DATABASES = {
     'default': dj_database_url.parse(
-        env('DATABASE')
+        env('DATABASE'),
         
     )
 }
